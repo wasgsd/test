@@ -6,8 +6,8 @@ RUN apt-get update \
  && DEBIAN_FRONTEND=noninteractive apt-get install -y ipython-notebook python-matplotlib \
                                                       python-pandas python-seaborn \
  && apt-get clean \
- && rm -rf /var/lib/apt/lists/*
- && pip install tornado pyzmq
+ && rm -rf /var/lib/apt/lists/* \
+ && pip install pyzmq
 
 EXPOSE 8888
 
