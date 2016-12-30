@@ -7,6 +7,7 @@ RUN apt-get update \
                                                       python-pandas python-seaborn \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
+ && pip install tornado pyzmq
 
 EXPOSE 8888
 
