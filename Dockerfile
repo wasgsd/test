@@ -12,6 +12,6 @@ EXPOSE 8888
 
 RUN mkdir /notebooks
 VOLUME /notebooks
-COPY *.ipynb /notebooks/
+# COPY *.ipynb /notebooks/
 
 CMD ipython notebook --no-browser --ip=0.0.0.0 --port=8888 --notebook-dir=/notebooks
