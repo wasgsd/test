@@ -8,7 +8,7 @@ RUN apt-get update \
                                                       python-setuptools\
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/* \
- && sudo easy_install pip \
+ && easy_install pip \
  && pip install pyzmq
 
 EXPOSE 8888
