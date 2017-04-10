@@ -9,7 +9,7 @@ RUN apt-get update \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/* \
  && easy_install pip \
- && pip install pyzmq
+ && pip install pyzmq \
  && pip install quandl
 
 EXPOSE 8888
